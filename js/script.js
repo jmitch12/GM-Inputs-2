@@ -61,17 +61,17 @@ function validateForm() {
 
   if (x == "") {
     // window.alert("Name must be filled out");
-    fnameError.innerHTML = "<span style='color: red;''>" +
+    fnameError.innerHTML = "<span style='color: #F7B500;'>" +
       "Error: Invalid first name format.</span>"
     // return false;
   }
   if (y == "") {
     // window.alert("Zip must be filled out");
-    zipError.innerHTML = "<span style='color: red;'>" +
+    zipError.innerHTML = "<span style='color: #F7B500;'>" +
       "Error: Invalid ZIP code format.</span>"
     return false;
   } else if (isNaN(y)) {
-    zipError.innerHTML = "<span style='color: red;'>" +
+    zipError.innerHTML = "<span style='color: #F7B500;'>" +
       "Error: Invalid ZIP code format.</span>"
     return false;
   }else {
