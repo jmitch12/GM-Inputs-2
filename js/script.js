@@ -63,22 +63,27 @@ function validateForm() {
     // window.alert("Name must be filled out");
     fnameError.innerHTML = "<span style='color: #F7B500;'>" +
       "Error: Invalid first name format.</span>"
+      document.getElementById("fnameInput").style.borderBottomColor= "#F7B500";
     // return false;
   }
   if (y == "") {
     // window.alert("Zip must be filled out");
     zipError.innerHTML = "<span style='color: #F7B500;'>" +
-      "Error: Invalid ZIP code format.</span>"
+      "Error: Invalid ZIP code format.</span>";
+      document.getElementById("zipInput").style.borderBottomColor= "#F7B500";
     return false;
   } else if (isNaN(y)) {
     zipError.innerHTML = "<span style='color: #F7B500;'>" +
-      "Error: Invalid ZIP code format.</span>"
+      "Error: Invalid ZIP code format.</span>";
+      document.getElementById("zipInput").style.borderBottomColor= "#F7B500";
     return false;
   }else {
     zipError.innerHTML = ""
     fnameError.innerHTML = ""
     successMessage.innerHTML = "<span style='color: green;'>" +
       "Thank you!</span>"
+      document.getElementById("fnameInput").style.borderBottomColor= "rgba(0,0,0,.33)";
+      document.getElementById("zipInput").style.borderBottomColor= "rgba(0,0,0,.33)";
     return false;
   }
 }
